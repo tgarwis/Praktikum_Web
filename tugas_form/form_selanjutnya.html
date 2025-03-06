@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+
+            <tr>
+                <td colspan="3" style="text-align: center;"><h2>Form Pendaftaran</h2></td>
+            </tr>
+            
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td>:</td>
+                <td><input type="text" id="jurusan" name="jurusan" placeholder="Jurusan" /></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>:</td>
+                <td><textarea id="alamat" name="alamat" placeholder="Alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="tgl_lahir">Tanggal lahir</label></td>
+                <td>:</td>
+                <td><input type="date" id="tgl_lahir" name="tgl_lahir" /></td>
+            </tr>
+            <tr>
+                <td><label for="no">No Hp</label></td>
+                <td>:</td>
+                <td><input type="tel" id="no" name="no" placeholder="No Hp" /></td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <a href="form_sederhana.html" class="button">Back</a>
+                </td>
+                <td>
+                    <button class="button" type="button" onclick="alert('Pendaftaran berhasil!')">Daftar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

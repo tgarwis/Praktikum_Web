@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="" method="post" enctype="multipart/form-data">
+    <table>
+
+      <tr>
+        <td colspan="3" style="text-align: center;"><h2>Form Pendaftaran</h2></td>
+      </tr>
+
+      <tr>
+        <td><label for="nama">Nama</label></td>
+        <td> :</td>
+        <td><input type="text" id="nama" name="nama" placeholder="Username"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td> :</td>
+        <td><input type="email" id="email" name="email" placeholder="Email"></td>
+      </tr>
+      <tr>
+        <td><label>Jenis Kelamin</label></td>
+        <td> :</td>
+        <td>
+          <label style="font-weight: normal;"><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki</label >
+          <label style="font-weight: normal;"><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Hobi</label></td>
+        <td> :</td>
+        <td>
+          <label style="font-weight: normal;"><input type="checkbox" name="hobi[]" value="Musik"> Membaca</label>
+          <label style="font-weight: normal;"><input type="checkbox" name="hobi[]" value="Olahraga"> Olahraga</label>
+          <label style="font-weight: normal;"><input type="checkbox" name="hobi[]" value="lainnya"> Lainnya</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="kota">Pilih Kota</label></td>
+        <td> :</td>
+        <td>
+          <select id="kota" name="kota">
+            <option value="jakarta">Jakarta</option>
+            <option value="bekasi">Bekasi</option>
+            <option value="surabaya">Surabaya</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="file_unggah">Pilih File</label></td>
+        <td> :</td>
+        <td><input type="file" name="file_unggah" id="file_unggah"></td>
+      </tr>
+
+    <tr><td></td></tr>
+
+      <tr>
+        <td colspan="3" style="text-align: center;">
+          <a href="form_selanjutnya.html" class="button">Next</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
