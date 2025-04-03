@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Nilai Mahasiswa</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        input, button { margin: 10px; padding: 10px; width: 90%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator</h2>
+        <label for="nim">NIM:</label>
+        <input type="number" id="num1" placeholder="Masukkan NIM">
+        <label for="nilai">Nilai:</label>
+        <input type="number" id="num2" placeholder="Masukkan Nilai" min="0" max="100">
+        <button onclick="hitung()">Hitung</button>
+        <h3 id="hasil"></h3>
+    </div>
+    
+    <script>
+        function hitung() {
+            let nim = document.getElementById("num1").value;
+            let nilai = parseInt(document.getElementById("num2").value);
+            let huruf;
+            
+            if (nilai >= 80 && nilai <= 100) huruf = 'A';
+            else if (nilai >= 70) huruf = 'B';
+            else if (nilai >= 60) huruf = 'C';
+            else if (nilai >= 50) huruf = 'D';
+            else huruf = 'E';
+            
+            document.getElementById("hasil").innerText = `NIM: ${nim} mendapatkan nilai: ${huruf}`;
+        }
+    </script>
+</body>
+</html>
